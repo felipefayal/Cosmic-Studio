@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root { /* Variáveis de cores */
+    --color-background: #10061c;
+    --color-primary: #a955e0;
+    --color-text: #e0e0e0;
+    --color-card: rgba(29, 13, 49, 0.5);
+    --color-border: #a955e0;
+}
+
+* { /* Reset básico */
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--color-background); /* Cor de fundo */
+    color: var(--color-text); /* Cor do texto */
+    background-image: url('../img/Background1.png'); /* Imagem como background */
+    background-size: cover; /* Cobre toda a área do corpo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    background-position: center bottom; /* Centraliza a imagem */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos a altura total da viewport */
+    overflow-x: hidden; /* Evita overflow horizontal */
+}

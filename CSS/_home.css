@@ -1,0 +1,97 @@
+.main-content {
+    display: flex; /* Flexbox para centralizar o conteúdo */
+    flex-direction: column; /* Coluna para empilhar os elementos */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 100px 8%; /* Espaçamento interno */
+}
+
+.main-content h1 { 
+    font-size: 3.5rem; /* Tamanho grande para o título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    font-weight: 800; /* Negrito extra */
+    line-height: 1.2; /* Espaçamento entre linhas */
+}
+
+.main-content p {
+    font-size: 1.1rem; /* Tamanho legível para o parágrafo */
+    color: #c4c4c4; /* Cor cinza clara para o texto */
+    margin-bottom: 40px; /* Espaçamento abaixo do parágrafo */
+}
+
+.main-button {
+    display: inline-flex; /* Flexbox para alinhar os botões */
+    gap: 20px; /* Espaçamento entre os botões */
+}
+
+.btn-primary, .btn-secondary {
+    padding: 12px 28px; /* Espaçamento interno */
+    border: none; /* Remove borda padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    font-size: 1rem; /* Tamanho da fonte */
+    font-weight: 600; /* Negrito */
+    cursor: pointer; /* Cursor de ponteiro */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves */
+}
+
+.btn-primary {
+    background-color: var(--color-primary); /* Cor roxa */
+    color: #fff; /* Texto branco */
+}
+
+.btn-primary:hover {
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+.btn-secondary {
+    background-color: transparent; /* Fundo transparente */
+    color: var(--color-text); /* Texto na cor do tema */
+    border: 2px solid var(--color-text); /* Borda na cor do tema */
+    display: flex; /* Flexbox para alinhar ícone e texto */
+    align-items: center; /* Alinha verticalmente */
+    gap: 8px; /* Espaçamento entre ícone e texto */
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-text); /* Fundo branco ao passar o mouse */
+    color: var(--color-background); /* Texto na cor de fundo */
+}
+
+.content-cards {
+    display: flex; /* Flexbox para os cards */
+    justify-content: center; /* Centraliza os cards */
+    gap: 30px; /* Espaçamento entre os cards */
+    padding: 50px 8%; /* Espaçamento interno */
+    flex-wrap: wrap; /* Permite que os cards quebrem linha em telas menores */
+}
+
+.card {
+    background: var(--color-card); /* Fundo semi-transparente */
+    border: 1px solid var(--color-border); /* Borda roxa */
+    border-radius: 15px; /* Bordas arredondadas */
+    padding: 30px; /* Espaçamento interno */
+    width: 320px; /* Largura fixa para os cards */
+    backdrop-filter: blur(5px); /* Efeito de desfoque */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Leve elevação ao passar o mouse */
+}
+
+.card h3 {
+    color: var(--color-primary); /* Título roxo */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+    font-weight: 600; /* Negrito */
+}
+
+.card p {
+    color: #c4c4c4; /* Texto cinza claro */
+    line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.card img {
+    width: 100%; /* Imagem ocupa toda a largura do card */
+    border-radius: 10px;    /* Bordas arredondadas para a imagem */
+    margin-bottom: 20px; /* Espaçamento abaixo da imagem */
+}
