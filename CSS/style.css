@@ -1,8 +1,8 @@
-@import '_base.css';       /* 1. Estilos base e variáveis */
-@import '_layout.css';     /* 2. Estilos do Header e Footer */
-@import '_home.css';       /* 3. Estilos específicos da página Home */
-@import '_portfolio.css';  /* 4. Estilos específicos da página Portfólio */
-@import '_blog.css';        /* 5. Estilos específicos da página Blog */
+@import '_base.css';       
+@import '_layout.css';     
+@import '_home.css';       
+@import '_portfolio.css';  
+@import '_blog.css';        
 @import '_sobre.css';
 @import '_contato.css';
-@import '_responsive.css'; /* 4. Regras de responsividade (sempre por último) */
+@import '_responsive.css'; 

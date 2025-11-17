@@ -1,24 +1,19 @@
-// script.js
-
 document.addEventListener("DOMContentLoaded", function() { // Espera o carregamento completo do DOM
 
     const loadComponent = (elementId, filePath) => { // Função para carregar componentes HTML
         fetch(filePath) // Faz a requisição para o arquivo HTML
             .then(response => response.ok ? response.text() : Promise.reject('Arquivo não encontrado.')) // Verifica se o arquivo foi encontrado
             .then(data => { // Se o arquivo for carregado com sucesso
-                const element = document.getElementById(elementId); // Seleciona o elemento pelo ID
+                const element = document.getElementById(elementId);
                 if (element) {
-                    element.innerHTML = data; // Insere o conteúdo carregado no elemento
+                    element.innerHTML = data; 
                 }
-                if (elementId === 'main-header') { // <<< VERIFICA SE É O HEADER
-                    // Depois que o header carregar, ativamos o menu e o link ativo
+                if (elementId === 'main-header') { 
+                    
                     setupMenu();
-                    updateActiveNavLink(); // <<< ATUALIZA O LINK ATIVO NO MENU DE NAVEGAÇÃO
+                    updateActiveNavLink(); 
                 }
-                // Se for o footer, você pode adicionar outras funcionalidades aqui, se necessário
 
-
-                // Você pode adicionar outras funcionalidades aqui, se necessário
             })
             .catch(error => console.error(`Erro ao carregar ${filePath}:`, error)); // Mensagem de erro no console
     };
@@ -35,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function() { // Espera o carregame
         }
     };
 
-    // --- NOVA FUNÇÃO PARA ATUALIZAR O LINK ATIVO ---
     const updateActiveNavLink = () => { // Função para atualizar o link ativo no menu de navegação
         const navLinks = document.querySelectorAll('.nav-menu a'); // Seleciona todos os links de navegação
         const currentPage = window.location.pathname.split('/').pop(); // Pega o nome do arquivo atual (ex: "portfolio.html")
